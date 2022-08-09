@@ -1,0 +1,285 @@
+🟩 Parte 1 -Alura (Marcação do primeiro texto)
+1) Crie o arquivo index.html.
+
+2) Copie o conteúdo do texto base, que você baixou no início desta aula, para dentro do arquivo index.html.
+
+3) Marque o título do texto e os seus parágrafos, usando as tags HTML próprias para isso:
+
+<h1>Sobre a Barbearia Alura</h1>
+
+<p>Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. 
+Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+<p>Nossa missão é: "Proporcionar auto-estima e qualidade de vida aos clientes".</p>
+
+<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+
+4) Destaque algumas informações do texto, deixando-as em negrito. Da mesma forma, dê ênfase em alguns pontos do texto, deixando-os em itálico. Use as tags HTML próprias para isso:
+
+<h1>Sobre a Barbearia Alura</h1>
+
+<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+<p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+O atendimento possui padrão de excelência e agilidade, garantindo qua
+🟩 Parte 2 -Alura (Separando o conteúdo e informações)
+1) Defina a estrutura básica do HTML index.html, não esquecendo de definir a linguagem da página:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+    Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+
+</html>
+
+2) Passe as informações de renderização da página para o navegador e defina o seu título:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <title>Barbearia Alura</title>
+
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+    Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</html>
+
+3) Por fim, separe as informações e conteúdo da página:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barbearia Alura</title>
+    </head>
+    <body>
+        <h1>Sobre a Barbearia Alura</h1>
+
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+        Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+        <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+        O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </body>
+</html>
+🟩 Parte 3 -Alura (Trabalhando com CSS)
+1) Na mesma pasta da página index.html, crie o arquivo CSS style.css. Neste arquivo, modifique a cor de fundo do body, centralize os parágrafos e altere a cor das tags strong que estão dentro de tags em:
+
+body {
+    background: #CCCCCC
+}
+
+p {
+    text-align: center;
+}
+
+em strong {
+    color: #FF0000;
+}
+
+2) Na página index.html, como último elemento do head, importe o CSS style.css:
+
+<link rel="stylesheet" href="style.css">
+
+3) Centralize o texto do h1:
+
+<h1 style="text-align: center">Sobre a Barbearia Alura</h1>
+
+4) E altere o tamanho da fonte do segundo parágrafo:
+
+<p style="font-size: 20px"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+5) A página completa ficará da seguinte forma:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barbearia Alura</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 style="text-align: center">Sobre a Barbearia Alura</h1>
+
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+        Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+        <p style="font-size: 20px"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+        O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </body>
+</html>
+🟩 Parte 4 -Alura (Estilizando imagens)
+1) Remova todo o CSS inline da página index.html.
+
+2) Como primeiro item do body, adicione a imagem banner.jpg (se você ainda não a baixou, faça o seu download aqui). Adicione também um identificador para a tag img:
+
+<img id="banner" src="banner.jpg">
+
+3) Adicione um identificador para o segundo parágrafo do texto:
+
+<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+4) No arquivo style.css, adicione o CSS que foi removido da página index.html, ou seja, alinhe o h1 e os parágrafos no centro da página e aumente a fonte do segundo parágrafo (use o seu identificador para referenciá-lo):
+
+h1 {
+    text-align: center
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px
+}
+
+5) Ainda no arquivo style.css, altere a largura da imagem:
+
+#banner {
+    width: 100%;
+}
+
+6) O CSS completo ficará da seguinte forma:
+
+body {
+    background: #CCCCCC
+}
+
+#banner {
+    width: 100%;
+}
+
+h1 {
+    text-align: center
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px
+}
+
+em strong {
+    color: #FF0000;
+}
+🟩 Parte 5 -Alura (Listas e divisões de conteúdo)
+1) Na página index.html, envolva o texto em uma div:
+
+<div class="principal">
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+    Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</div>
+
+2) E abaixo da div principal, crie a div beneficios, com a lista de benefícios e a sua imagem:
+
+<div class="beneficios">
+    <h2>Benefícios</h2>
+
+    <ul>
+        <li class="itens">Atendimento aos Clientes</li>
+        <li class="itens">Espaço diferenciado</li>
+        <li class="itens">Localização</li>
+        <li class="itens">Profissionais Qualificados</li>
+    </ul>
+
+    <img src="beneficios.jpg" class="imagembeneficios">
+</div>
+
+3) No CSS style.css, remova a estilização da cor de fundo do body e passe-a para a div principal. Além disso, dê um espaçamento interno para ela:
+
+body {
+
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+4) Mude a fonte dos itens da lista para itálico, estilize a cor de fundo da div beneficios e alinhe o texto do h2 ao centro:
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+5) Na lista, modifique o seu display para inline-block e faça ela ser alinhada pela linha de cima. Além disso, altere a sua largura para ser 20% da página e sua margem externa à direita para ser de 15%:
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+6) Por fim, altere a largura da imagem dos benefícios:
+
+.imagembeneficios {
+    width: 50%;
+}
+🟩 Parte 6 -Alura (Finalizando a página)
+1) Crie o cabeçalho da página index.html:
+
+<header>
+    <h1 class="titulo-principal">Barbearia Alura</h1>
+</header>
+
+2) Altere a tag do título Sobre a Barbearia Alura para <h2> e a tag do título Benefícios para <h3>. Além disso, dê uma mesma classe para os dois:
+
+<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+
+E:
+
+<h3 class="titulo-centralizado">Benefícios</h3>
+
+3) No arquivo style.css, dê um espaçamento interno à esquerda para o cabeçalho, de 20px:
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+4) E por fim, remova os estilos das tags h1 e h2 e centralize-os em um único lugar, através da classe titulo-centralizado:
+
+.titulo-centralizado {
+    text-align: center
+}
+🟨Final
